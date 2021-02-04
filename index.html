@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dados 2018</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <!-- <script>window.alert("Suzik me fez sob medida para você\n ʕ•́ᴥ•̀ʔっ")</script> -->
+
+</head>
+
+<body class="bg-light">
+    <h1 class="display-3 text-center">EXAMES REALIZADOS EM 2018</h1><br>
+    <div class="container-fluid">
+        <form class=" d-flex flex-fill">
+            <div class="col-sm-3">
+                <h4>Paciente</h4>
+                <input class="form-control" type="text" id="nome">
+                <h4>Município de Residência</h3>
+                    <Select class="form-control" id="residencia">
+                        <option>Sapé</option>
+                        <option>João Pessoa</option>
+                        <option>Areias</option>
+                        <option>Campina Grande</option>
+                        <option>Caja</option>
+                        <option>Cajazeiras</option>
+                    </Select>
+            </div>
+            <div class="col-sm-3">
+                <h4>Idade</h4>
+                <input class="form-control" type="number" id="idade">
+                <h4>Área</h4>
+                <select class="form-control" id="area">
+                    <option>Urbana</option>
+                    <option>Periurbana</option>
+                    <option>Rural</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <h4> Ocupação</h4>
+                <input class="form-control" type="text" id="ocupacao">
+                <h4>Exame</h4>
+                <select class="form-control" id="exame">
+                    <option>Tipo 1</option>
+                    <option>Tipo 2</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <h4>Data de Liberação</h4>
+                <input class="form-control" type="date" id="data">
+                <h4>Resultado</h4>
+                <select class="form-control" id="resultado">
+                    <option>opção 1 </option>
+                    <option>opção 2</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-sm-6 p-4">
+        <button class="btn btn-primary col-sm-3" onclick="enviar()">Adicionar Dados</button>
+        <button class="btn btn-outline-warning col-sm-3" onclick="criarTabela()">Criar Planilha</button>
+    </div>
+   
+
+    <script lang="javascript" src="node_modules\xlsx\dist\xlsx.full.min.js"></script>
+    <script src="node_modules\file-saver\dist\FileSaver.min.js"></script>
+    <script src="processamento.js"></script>
+</body>
+
+</html>
