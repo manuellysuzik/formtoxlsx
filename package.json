@@ -5,12 +5,17 @@
   "main": "processamento.js",
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "cross-blob": "^2.0.0",
+    "express": "^4.17.1",
     "file-saver": "^2.0.5",
+    "json2xls": "^0.1.2",
+    "nodemon": "^2.0.7",
+    "sucrase": "^3.17.1",
     "xlsx": "^0.16.9"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
